@@ -1,7 +1,23 @@
+import bcrypt from 'bcryptjs';
+
 const data = {
+    users:[
+{
+    name: 'fher',
+    email:'admin@example.com',
+    password: bcrypt.hashSync('1234',8),
+    isAdmin: true,
+},
+{
+    name: 'john',
+    email:'user@example.com',
+    password: bcrypt.hashSync('1234',8),
+    isAdmin: false,
+},
+    ],
     products:[
         {
-        _id:'1',
+        
         name: 'Juliana Valdiri',
         category: 'friends',
         image: '/images/0020-0.jpg',
@@ -13,7 +29,7 @@ const data = {
         description: 'Busco hacer amigos'
     },
     {
-        _id:'2',
+        
         name: 'Samantha Aguilar',
         category: 'friends',
         image: '/images/0021-0.jpg',
@@ -25,7 +41,7 @@ const data = {
         description: 'Busco hacer amigos'
     },
     {
-        _id:'3',
+        
         name: 'Ashley Velez',
         category: 'dating',
         image: '/images/0022-0.jpg',
@@ -37,7 +53,7 @@ const data = {
         description: 'Busco hacer amigos'
     },
     {
-        _id:'4',
+        
         name: 'Sofia Henao',
         category: 'dating',
         image: '/images/0023-0.jpg',
@@ -49,7 +65,7 @@ const data = {
         description: 'Busco hacer amigos'
     },
     {
-        _id:'5',
+        
         name: 'Catalina Londoño',
         category: 'dating',
         image: '/images/0024-0.jpg',
@@ -61,7 +77,7 @@ const data = {
         description: 'Busco hacer amigos'
     },
     {
-        _id:'6',
+        
         name: 'Karol Bedoya',
         category: 'dating',
         image: '/images/0025-0.jpg',
@@ -73,7 +89,7 @@ const data = {
         description: 'Busco hacer amigos'
     },
     {
-        _id:'7',
+        
         name: 'Angie Vallejo',
         category: 'dating',
         image: '/images/0026-0.jpeg',
@@ -85,7 +101,7 @@ const data = {
         description: 'Busco hacer amigos'
     },
     {
-        _id:'8',
+        
         name: 'Katerine Cruz',
         category: 'dating',
         image: '/images/0027-0.jpg',
